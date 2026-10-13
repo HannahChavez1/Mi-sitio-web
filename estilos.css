@@ -1,0 +1,275 @@
+/*Estilos Generales*/
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 180px;
+}
+header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+/* Estilos del menu*/
+nav{
+    background-color: #ffc7db;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    position: relative;
+}
+nav a{
+    display: block;
+    color: #050405;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+nav a:hover{
+    background-color: #ffd8e5;
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    background-color: #ffc7db;
+    min-width: 180px;
+}
+nav li:hover ul{
+    display: block;
+}
+footer img{
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+}
+/*Estilo de pie de Pagina*/
+footer{
+    background-color: #ffebf2;
+    color: rgb(0, 0, 0);
+    display: flex ;
+    align-items: center;
+    padding: 20px;
+}
+section{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-width: 350px;
+}
+.principal{
+    width: 70%;
+    background-color: #ffeaef;
+    padding: 20px;
+    border: 2px solid #fddfdf;
+}
+.secundario{
+    width: 40%;
+    background-color: #ffeaef;
+    padding: 20px;
+    border: 3px solid #fddfdf;
+}
+aside img{
+    height: 175px;
+    width: 200px;
+    margin-right: 40px;
+}
+/*-- Posiciones*/
+.caja-rosa {          
+  background: rgb(255, 0, 195);
+  height: 100px;
+  width: 100px;       
+}
+.caja-azul{
+  background: lightskyblue;
+  height: 100px;
+  width: 100px; 
+  position: static;   
+}
+
+/* 2. cuadrito al lado*/
+.caja-rosa1 {
+  position: relative;  
+  background: rgb(255, 0, 195);
+  width: 100px;
+  height: 100px;
+  top: 100px;         
+  left: 100px;        
+}
+.caja-azul1{
+  background: lightskyblue;
+  height: 100px;
+  width: 100px; 
+  position: static;   
+}
+/*3. Absolute*/
+.caja-azul2{
+  background: lightskyblue;
+  height: 100px;
+  width: 100px; 
+  position: static;   
+}
+.container1 {
+  position: relative;
+  background:rgb(255, 216, 216);
+}
+.caja-rosa2 {
+  position: absolute;
+  background: rgb(255, 0, 195);
+  width: 100px;
+  height: 100px;
+  right: 5px;    
+}
+/*4. Fixed*/
+.container { 
+  position: relative;
+  background: rgb(255, 216, 216);
+  width: 50%;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.caja-rosa3 {
+    background:rgb(255, 0, 195);
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed; 
+    top: 20px;       
+    right: 20px;     
+    z-index: 1000;   
+}
+.caja-azul3{
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+}
+/*STicky*/
+.container2 { 
+  position: relative;
+  background: rgb(255, 216, 216);
+  width: 50%;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.container2 p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.caja-rosa4 {
+  background: rgb(255, 0, 195);
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 5px;
+}
+
+.caja-azul4{
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+}
+
+.sticky {
+  position: sticky;
+  background: rgb(174, 0, 255);
+  top: 0;
+  padding: 10px;
+  color: white;
+}
+/* Estilos de la Tabla */
+.tabla-tecnologias {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabla-tecnologias th {
+    background-color: darkslategrey;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.tabla-tecnologias td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+}
+
+/* Filas alternadas */
+.tabla-tecnologias tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
+}
+
+.tabla-tecnologias tbody tr:hover {
+    background-color: #eef5f5;
+}
+
+/* Estilos de la Lista de Definiciones (<dl>, <dt>, <dd>) */
+.lista-conceptos {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-left: 5px solid darkseagreen;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lista-conceptos dt {
+    font-weight: bold;
+    color: darkslategrey;
+    font-size: 1.05rem;
+    margin-top: 12px;
+}
+
+.lista-conceptos dt:first-child {
+    margin-top: 0;
+}
+
+.lista-conceptos dd {
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #444444;
+    line-height: 1.5;
+}
+
+/* Estilos del Contenedor de Video */
+.contenedor-video {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-video iframe {
+    border: none;
+    display: block;
+}
+
+.nota-adicional {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed darkseagreen;
+}
