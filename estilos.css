@@ -273,3 +273,59 @@ aside img{
     padding-top: 10px;
     border-top: 1px dashed darkseagreen;
 }
+/* ==========================================
+   Estilos unicamente para el Conversor
+   ========================================== */
+
+/* Campos de entrada y lista desplegable */
+#temperatura,
+#tipoConversion {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#temperatura:focus,
+#tipoConversion:focus {
+    border-color: #005c99;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 92, 153, 0.3);
+}
+
+/* Boton Convertir */
+#btnConvertir {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btnConvertir:hover {
+    background-color: #1b5e20;
+}
+
+/* Caja del Resultado */
+#resultado {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background-color: #e8f5e9;
+    border-left: 4px solid #2e7d32;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #1b5e20;
+    line-height: 1.5;
+}
+
+/* Ocultar contenedor de resultado cuando esta vacio */
+#resultado:empty {
+    display: none;
+}
